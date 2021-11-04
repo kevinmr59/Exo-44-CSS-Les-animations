@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#square
+{
+    width: 100px;
+    height: 100px;
+    border: solid black 1px;
+    background-color: blue;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-name: couleurs;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes couleurs {
+    from {
+        font-size: 8px;
+        width: 100px;
+        background-color: blue;
+        transform: scale(1.25) rotate(0deg);
+    }
+
+    to
+    {
+        font-size: 20px;
+        width: 300px;
+        background-color: red;
+        transform: scale(1.60) rotate(360deg);
+    }
+}
+
